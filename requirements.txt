@@ -1,0 +1,2 @@
+# Docs site tooling. Pin exact version so `mkdocs build` is reproducible in CI.
+mkdocs-material==9.7.6

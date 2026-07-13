@@ -1,0 +1,112 @@
+site_name: Cheatsheets
+site_description: A crafted engineering reference - daily SWE / DevOps / system-design cheatsheets
+site_author: your_javaguy
+site_url: https://dancan254.github.io/cheatsheets/
+repo_url: https://github.com/Dancan254/cheatsheets
+repo_name: Dancan254/cheatsheets
+
+theme:
+  name: material
+  language: en
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    logo: material/card-text-outline
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light
+  features:
+    - navigation.instant       # SPA-style navigation
+    - navigation.instant.progress
+    - navigation.tracking      # URL follows the active anchor
+    - navigation.top           # back-to-top button
+    - navigation.indexes
+    - navigation.footer        # prev/next at page bottom
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy        # copy button on every code block
+    - content.code.annotate
+    # NOTE: navigation.sections is intentionally OFF so each category
+    # collapses/expands with an arrow in the sidebar.
+
+extra_css:
+  - stylesheets/brand.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+      permalink_title: Link to this section
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Java & Spring:
+      - Java 25: java/java-25.md
+      - Spring Boot 4 / SF7: java/spring-boot-4.md
+      - Testcontainers: java/testcontainers.md
+  - DevOps:
+      - Docker: devops/docker.md
+      - Kubernetes: devops/kubernetes.md
+      - AWS: devops/aws.md
+      - Jenkins: devops/jenkins.md
+      - GitHub Actions: devops/github-actions.md
+      - Terraform: devops/terraform.md
+  - Linux & CLI:
+      - Linux: linux/linux.md
+      - Bash: linux/bash.md
+      - grep / sed / awk / find: linux/text-tools.md
+      - tmux / vim: linux/tmux-vim.md
+  - Messaging:
+      - Kafka: messaging/kafka.md
+      - RabbitMQ: messaging/rabbitmq.md
+      - Broker comparison: messaging/broker-comparison.md
+  - System Design:
+      - Building blocks: system-design/building-blocks.md
+      - Patterns: system-design/patterns.md
+      - CAP & consistency: system-design/cap-consistency.md
+      - Napkin math: system-design/napkin-math.md
+  - Interview:
+      - LeetCode patterns: interview/leetcode-patterns.md
+      - Complexity: interview/complexity.md
+      - Java idioms: interview/java-idioms.md
+  - Data:
+      - SQL: data/sql.md
+      - Flyway: data/flyway.md
+  - Languages:
+      - Rosetta (Go/Python/Node → Java): languages/rosetta.md
