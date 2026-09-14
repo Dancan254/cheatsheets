@@ -80,6 +80,8 @@ nav:
       - Java 25: java/java-25.md
       - Spring Boot 4 / SF7: java/spring-boot-4.md
       - Testcontainers: java/testcontainers.md
+  - AI Engineering:
+      - Applied AI roadmap: ai/roadmap.md
   - DevOps:
       - Docker: devops/docker.md
       - Kubernetes: devops/kubernetes.md

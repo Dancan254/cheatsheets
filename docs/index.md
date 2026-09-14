@@ -28,6 +28,14 @@ Cheatsheets for daily backend, DevOps, and system-design work - dense, current, 
 
     [Java 25](java/java-25.md) · [Spring Boot 4](java/spring-boot-4.md) · [Testcontainers](java/testcontainers.md)
 
+-   :material-robot-outline:{ .lg .middle } &nbsp; __AI Engineering__
+
+    ---
+
+    Becoming an applied AI engineer from a Spring Boot base - retrieval, evals, agents, cost.
+
+    [Applied AI roadmap](ai/roadmap.md)
+
 -   :material-docker:{ .lg .middle } &nbsp; __DevOps__
 
     ---
@@ -86,4 +94,4 @@ Cheatsheets for daily backend, DevOps, and system-design work - dense, current, 
 
 </div>
 
-<small>Fully written: Java 25 · Spring Boot 4 · Testcontainers · Docker · Kubernetes · AWS · Jenkins · GitHub Actions · Linux · Bash · Kafka · RabbitMQ · SQL · Flyway · System Design · LeetCode. The rest are structured stubs, ready to fill.</small>
+<small>All 25 sheets are written. Every one follows the same shape: what it is for, real commands and snippets, the gotchas that bite, and a quick-reference table.</small>
